@@ -123,7 +123,7 @@ body {
 
 /* Background Bem vindo */
 #section-1 {
-  background: linear-gradient(45deg, #0C134F, #1D267D, #5C469C, #D4ADFC);
+  background: linear-gradient(45deg, #00005C, #3B185F, #C060A1, #F0CAA3);
   background-size: 200% 200%;
   animation: colors 15s ease infinite;
 }
@@ -138,7 +138,7 @@ img {
   z-index: 1;
   width: 750px;
   margin: 15px;
-  top: -150px;
+  bottom: -20px;
 }
 
 .bloco-1 img {
@@ -169,7 +169,7 @@ img {
   z-index: 1;
   width: 750px;
   margin: 15px;
-  top: -200px;
+  bottom: 430px;
   left: 1100px;
 }
 
@@ -197,7 +197,7 @@ img {
 }
 
 #logo-site {
-  top: 10%;
+  margin-top: -150px;
   
 }
 
@@ -230,24 +230,24 @@ img {
   -webkit-transform: translateY(-50%) rotate(-45deg);
 }
 
-#section-1 h2 {
+#section-1-1 {
+  z-index: 4;
   position: relative;
   width: 37%;
   font-size: 34px;
   text-align: center;
   font-weight: bold;
-  top: -600px;
-  left: 30px;
-  margin-top: 10px;
+  top: -200px;
+  left: 32%;
 }
 
-#section-1 p {
+#section-1-2 {
   position: relative;
-  width: 32%;
+  width: 50%;
   font-size: 30px;
   text-align: center;
-  top: -600px;
-  left: 75px;
+  top: -170px;
+  left: 25%;
   margin-top: 10px;
 }
 
