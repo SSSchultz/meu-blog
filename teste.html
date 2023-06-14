@@ -12,7 +12,9 @@
 
 <body>
   <div class="container">
+
     <!-- Menu -->
+
     <input type="radio" name="radio" id="radio-nav-1" checked="checked" />
     <span>Bem vindo</span>
     <input type="radio" name="radio" id="radio-nav-2" />
@@ -27,10 +29,8 @@
     <!-- Scroll -->
     <div class="scroll">
       <section class="section" id="section-1">
-        <header>
-          <div class="logo-1">
-            <span>Bem Vindo</span>
-          </div>
+        <header class="logo-1">
+          <span>Bem vindo</span>
           <img id="logo-site" src="imagens/LOGO-PURARGS.png" alt="logo Gabriel Schultz UI UX">
         </header>
         <main>
@@ -40,8 +40,9 @@
             Projeto de Sítios Internet I
           </p>
           <div class="bloco-1">
-            <img src="https://img.freepik.com/fotos-gratis/menina-adolescente-triste-com-um-buque-de-flores-ai-generativa_169016-28830.jpg?w=1380&t=st=1686559843~exp=1686560443~hmac=3e8428691fa5fdcd0bd1aa3a2db5c26cdcdf608af4ebee89f20b3d9fa40bcf58"
-            alt="placeholder" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/menina-adolescente-triste-com-um-buque-de-flores-ai-generativa_169016-28830.jpg?w=1380&t=st=1686559843~exp=1686560443~hmac=3e8428691fa5fdcd0bd1aa3a2db5c26cdcdf608af4ebee89f20b3d9fa40bcf58"
+              alt="placeholder" />
             </img>
           </div>
           <div class="bloco-1-2">
@@ -54,10 +55,8 @@
       </section>
 
       <section class="section" id="section-2">
-        <header>
-          <div class="logo-2">
-            <span>Hobbies</span>
-          </div>
+        <header class="logo-2">
+          <span>Hobbies</span>
         </header>
         <main>
           <h2>Hobbies</h2>
@@ -68,10 +67,8 @@
       </section>
 
       <section class="section" id="section-3">
-        <header>
-          <div class="logo-3">
-            <span>Trabalhos</span>
-          </div>
+        <header class="logo-3">
+          <span>Trabalhos</span>
         </header>
         <main>
           <h2>Trabalhos</h2>
@@ -82,10 +79,8 @@
       </section>
 
       <section class="section" id="section-4">
-        <header>
-          <div class="logo-4">
-            <span>place holder</span>
-          </div>
+        <header class="logo-4">
+          <span>place holder</span>
         </header>
         <main>
           <h2>SASS</h2>
@@ -96,16 +91,38 @@
       </section>
 
       <section class="section" id="section-5">
-        <header>
-          <div class="logo-5">
-            <span>Contato</span>
-          </div>
+        <header class="logo-5">
+          <span>Contato</span>
         </header>
         <main>
-          <h2>Contato</h2>
-          <p>
+          <!--
+          <h2 id="section-5-1">Contato</h2>
+          -->
+          <div class="form">
+            <form class="form" name="meu_form">
+
+              <h1>Entre em contato</h1>
+
+              <input class="form" type="text" id="nomeid" placeholder="Gabriel Schultz" required="required"
+                name="nome" />
+              <label class="form" for="nome">Nome</label>
+
+              <input class="form" type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+              <label class="form" for="fone">Fone</label>
+
+              <input class="form" type="email" id="emailid" placeholder="exemplo@mail.com" name="email" />
+              <label class="form" for="email">Email</label>
+
+              <textarea placeholder="Deixe sua opnião"></textarea>
+
+              <input type="submit" class="enviar" value="Enviar" />
+            </form>
+          </div>
+          <!--
+            <p id="section-5-2">
             ContatoContatoContatoContatoContatoContatoContatoContatoContato
           </p>
+          -->
         </main>
       </section>
     </div>
