@@ -102,11 +102,43 @@ body {
   opacity: 1;
 }
 
-
-
 .container>input:hover+span {
   background: rgb(34, 90, 212);
   color: #fff;
+}
+
+.scroll,
+.section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all .6s ease-in-out;
+}
+
+.section {
+  overflow: hidden;
+}
+
+.section h2 {
+  position: absolute;
+  width: 100%;
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.section p {
+  position: absolute;
+  width: 50%;
+  font-size: 12px;
+  text-align: center;
+  top: 50%;
+  left: 25%;
+  margin-top: 10px;
 }
 
 /* Bem vindo */
@@ -523,47 +555,6 @@ img {
   animation: colors 15s ease infinite;
 }
 
-#section-5 {
-  background: linear-gradient(45deg, #00005C, #3B185F, #C060A1, #F0CAA3);
-  background-size: 200% 200%;
-  animation: colors 15s ease infinite;
-}
-
-#section-5-1 {
-  z-index: 4;
-  position: relative;
-  width: 37%;
-  font-size: 34px;
-  text-align: center;
-  font-weight: bold;
-  top: -0px;
-  left: 32%;
-}
-
-#section-5-2 {
-  position: relative;
-  width: 50%;
-  font-size: 30px;
-  text-align: center;
-  top: 30px;
-  left: 25%;
-  margin-top: 10px;
-}
-
-.scroll,
-.section {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all .6s ease-in-out;
-}
-
-.section {
-  overflow: hidden;
-}
-
 .logo-4 {
   z-index: 1;
   top: 40px;
@@ -593,6 +584,36 @@ img {
   -webkit-transform: translateY(-50%) rotate(-45deg);
 }
 
+
+/* Contatos */
+
+#section-5 {
+  background: linear-gradient(45deg, #00005C, #3B185F, #C060A1, #F0CAA3);
+  background-size: 200% 200%;
+  animation: colors 15s ease infinite;
+}
+
+#section-5-1 {
+  z-index: 4;
+  position: relative;
+  width: 37%;
+  font-size: 34px;
+  text-align: center;
+  font-weight: bold;
+  top: -0px;
+  left: 32%;
+}
+
+#section-5-2 {
+  position: relative;
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  top: 30px;
+  left: 25%;
+  margin-top: 10px;
+}
+
 .logo-5 {
   z-index: 1;
   top: 40px;
@@ -613,7 +634,7 @@ img {
   font-size: 20px;
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 60px;
   scale: 80%;
   white-space: nowrap;
   font-weight: bold;
@@ -622,24 +643,109 @@ img {
   -webkit-transform: translateY(-50%) rotate(-45deg);
 }
 
-.section h2 {
-  position: absolute;
-  width: 100%;
-  font-size: 34px;
-  text-align: center;
-  font-weight: bold;
-  top: 50%;
-  margin-top: -50px;
+form.form {
+  align-items: center;
 }
 
-.section p {
-  position: absolute;
-  width: 50%;
-  font-size: 12px;
-  text-align: center;
-  top: 50%;
-  left: 25%;
+form {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+  max-width: 500px;
+}
+
+form.h1 {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #66FFFF;
+  text-shadow: 5px 5px 5px black;
+}
+
+input.form,
+textarea {
+  width: 200px;
+  padding: 10px;
+  color: black;
+  margin-left: 20px;
   margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+}
+
+input.form:hover,
+textarea:hover,
+input.form:focus,
+textarea:focus {
+  border-color: #000066;
+  box-shadow: 5px 0px 9px #FFFF00;
+  background-color: #dd3b51;
+  color: black;
+  font-weight: bold;
+}
+
+.enviar {
+  background-color: #62ee6e;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  color: black;
+}
+
+textarea {
+  width: 400px;
+  height: 120px;
+  line-height: 20px;
+  max-width: 400px;
+}
+
+form label {
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+div.form {
+  display: flex;
+  justify-content: center;
+  height: 1450px;
+  scale: 150%;
+  z-index: 5;
+}
+
+form.form h1 {
+  left: 400px;
+}
+
+div.contatos {
+  display: flex;
+}
+
+img.contatos-1 {
+  scale: 100%;
+  display: flex;
+  left: -500px;
+}
+
+a.contatos-1 {
+  scale: 50%;
+  z-index: 1;
+}
+
+a.contatos-2 {
+  z-index: 1;
+  position: relative;
+  bottom: 600px;
+}
+
+img.contatos-2 {
+  scale: 55%;
+  position: relative;
+  left: 600px;
+  top: 580px;
 }
 
 /* Animações */
@@ -707,74 +813,3 @@ img {
 
 /* */
 
-form.form {
-  align-items: center;
-}
-
-form {
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 15px;
-  max-width: 500px;
-}
-
-form.h1 {
-  margin-bottom: 20px;
-  margin-left: 20px;
-  color: #66FFFF;
-  text-shadow: 5px 5px 5px black;
-}
-
-input.form,
-textarea {
-  width: 200px;
-  padding: 10px;
-  color: black;
-  margin-left: 20px;
-  margin-top: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border: 1px solid;
-}
-
-input.form:hover,
-textarea:hover,
-input.form:focus,
-textarea:focus {
-  border-color: #000066;
-  box-shadow: 5px 0px 9px #FFFF00;
-  background-color: #66FFFF;
-  color: black;
-  font-weight: bold;
-}
-
-.enviar {
-  background-color: #66FFFF;
-  height: 40px;
-  width: 100px;
-  font-weight: bold;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border: 1px solid;
-  color: black;
-}
-
-textarea {
-  width: 400px;
-  height: 120px;
-  line-height: 20px;
-  max-width: 400px;
-}
-
-form label {
-  margin-left: 20px;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-div.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 550px;
-}
